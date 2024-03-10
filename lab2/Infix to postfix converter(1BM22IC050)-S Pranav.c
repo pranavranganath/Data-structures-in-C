@@ -59,7 +59,7 @@ target[j] = source[i];
 j++;
 i++;
 }
-else if (source[i] == '+' || source[i] == '–' || source[i] == '*' ||
+else if (source[i] == '+' || source[i] == 'â€“' || source[i] == '*' ||
 source[i] == '/' || source[i] == '%')
 {
 while( (top!=-1) && (st[top]!= '(') && (getPriority(st[top])
@@ -90,7 +90,7 @@ int getPriority(char op)
 {
 if(op=='/' || op == '*' || op=='%')
 return 1;
-else if(op=='+' || op=='–')
+else if(op=='+' || op=='â€“')
 return 0;
 
 }
